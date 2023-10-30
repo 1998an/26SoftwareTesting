@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="testCases.CheckoutPage1Test">
+        <methods>
+          <include name="verifyUrlOfCheckOutPage1"/>
+          <include name="closeBrowser"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- testCases.CheckoutPage1Test -->
+      <class name="testCases.CheckoutPage2Test">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="verifyUrlofCheckoutPage2Test"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- testCases.CheckoutPage2Test -->
+      <class name="testCases.LoginPageTest">
+        <methods>
+          <include name="verifyTitleOfApplication"/>
+          <include name="setUp"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- testCases.LoginPageTest -->
+      <class name="testCases.InventoryPageTest">
+        <methods>
+          <include name="verifyProductLableTest"/>
+          <include name="closeBrowser"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- testCases.InventoryPageTest -->
+      <class name="testCases.CartPageTest">
+        <methods>
+          <include name="verifytitleOfCartPageTest"/>
+          <include name="closeBrowser"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- testCases.CartPageTest -->
+      <class name="testCases.CheckoutCompleteTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="verifyURLofcheckoutCompletePageTest"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- testCases.CheckoutCompleteTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

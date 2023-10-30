@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="groupTest">
+	  <groups>
+		  <run>
+			  <include name="sanity"></include>
+			  <exclude name="retest"></exclude>
+		  </run>
+	  </groups>
+    <classes>
+      <class name="testCases.CheckoutPage2Test"/>
+      <class name="testCases.CheckoutPage1Test"/>
+      <class name="testCases.CartPageTest"/>
+      <class name="testCases.CheckoutCompleteTest"/>
+      <class name="testCases.LoginPageTest"/>
+      <class name="testCases.InventoryPageTest"/>
+    </classes>
+  </test> <!-- groupTest -->
+</suite> <!-- Suite -->
