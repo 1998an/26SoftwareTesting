@@ -5,6 +5,9 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.AssertJUnit;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeMethod;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeMethod;
 import java.io.IOException;
 
 import org.apache.poi.EncryptedDocumentException;
@@ -35,7 +38,7 @@ public class InventoryPageTest extends TestBase
 	{
 		String expURL=ReadData.readExcel_inventory(0,3);  //https://www.saucedemo.com/inventory.html
 		String actURL=invent.verifyinventoryPageUrl();
-		Assert.assertEquals(expURL, actURL);
+		AssertJUnit.assertEquals(expURL, actURL);
 		Reporter.log("url of inventory page"+actURL);
 	}
 	@Test(enabled = true,priority = 3,dependsOnMethods = "verifyinventoryPageUrlTest",groups= {"retest","sanity"})

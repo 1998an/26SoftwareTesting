@@ -5,6 +5,9 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.AssertJUnit;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeMethod;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeMethod;
 import java.io.IOException;
 
 import org.apache.poi.EncryptedDocumentException;

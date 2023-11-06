@@ -1,6 +1,9 @@
 package testCases;
 
 import org.testng.annotations.Test;
+import org.testng.annotations.BeforeMethod;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
 
 import base.TestBase;
 import pages.LoginPage;
@@ -29,21 +32,21 @@ public class LoginPageTest extends TestBase
 	{
 		String expURL=ReadData.readExcel_login(0,0);  //https://www.saucedemo.com/
 		String actURL=login.verifyURLofApplication();
-		Assert.assertEquals(expURL, actURL);
+		AssertJUnit.assertEquals(expURL, actURL);
 	}
 	@Test(enabled = true,priority = 2,dependsOnMethods = "LoginToApplicationTest",groups = {"sanity","regression"})
 	public void verifyTitleOfApplication() throws EncryptedDocumentException, IOException
 	{
 		String expTitle=ReadData.readExcel_login(0,1);  //Swag Labs(0,1)
 		String actTitle=login.verifyTitleOfApplication();
-		Assert.assertEquals(expTitle, actTitle);
+		AssertJUnit.assertEquals(expTitle, actTitle);
 	}
 	@Test
 	public void LoginToApplicationTest() throws IOException
 	{
 		String expURL=ReadData.readExcel_login(0, 2);  //https://www.saucedemo.com/inventory.html
 		String actURL=login.LoginToApplication();
-		Assert.assertEquals(expURL, actURL);
+		AssertJUnit.assertEquals(expURL, actURL);
 	}
 	@AfterMethod(alwaysRun = true)
 	public void closeBrowser(ITestResult it) throws IOException

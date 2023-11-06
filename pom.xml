@@ -3,6 +3,28 @@
   <groupId>SeleniumFramework26</groupId>
   <artifactId>SeleniumFramework26</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  
+  <build>
+	  <pluginManagement>
+		  <plugins>
+    		<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+    		    <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.11.0</version>
+			</plugin>
+			<plugin>
+    			<groupId>org.apache.maven.plugins</groupId>
+   			    <artifactId>maven-surefire-plugin</artifactId>
+   		        <version>3.1.2</version>
+   		        <configuration>
+					   <suiteXmlFiles>
+						   <suiteXmlFile>MasterTest.xml</suiteXmlFile>
+					   </suiteXmlFiles>
+				   </configuration>
+			</plugin>
+		  </plugins>
+	  </pluginManagement>
+  </build>
   <dependencies>
 	  <dependency>
 <groupId>org.seleniumhq.selenium</groupId>
@@ -18,7 +40,7 @@
 <groupId>org.testng</groupId>
 <artifactId>testng</artifactId>
 <version>7.7.1</version>
-<scope>test</scope>
+<scope>compile</scope>
 </dependency>
 <dependency>
 <groupId>org.apache.poi</groupId>
@@ -44,7 +66,5 @@
 <groupId>com.aventstack</groupId>
 <artifactId>extentreports</artifactId>
 <version>3.1.5</version>
-</dependency>
-
-  </dependencies>
+</dependency> </dependencies>
 </project>
