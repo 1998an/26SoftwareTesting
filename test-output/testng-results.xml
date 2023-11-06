@@ -1,163 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
-    <line>
-      <![CDATA[url after click back to home =https://www.saucedemo.com/inventory.html]]>
-    </line>
-    <line>
-      <![CDATA[url after click finish =https://www.saucedemo.com/checkout-complete.html]]>
-    </line>
-    <line>
-      <![CDATA[title of checkout complete =Checkout: Complete!]]>
-    </line>
-    <line>
-      <![CDATA[Visiability of confirm Image =true]]>
-    </line>
-    <line>
-      <![CDATA[Order dispatched msg text =Your order has been dispatched, and will arrive just as fast as the pony can get there!]]>
-    </line>
-    <line>
-      <![CDATA[Thank You msg text =Thank you for your order!]]>
-    </line>
   </reporter-output>
-  <suite started-at="2023-11-06T11:21:53 IST" name="Default suite" finished-at="2023-11-06T11:22:31 IST" duration-ms="37835">
+  <suite started-at="2023-11-06T16:45:38 IST" name="Default suite" finished-at="2023-11-06T16:46:44 IST" duration-ms="65311">
     <groups>
     </groups>
-    <test started-at="2023-11-06T11:21:53 IST" name="Default test" finished-at="2023-11-06T11:22:31 IST" duration-ms="37835">
-      <class name="testCases.CheckoutCompleteTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.CheckoutCompleteTest@73e22a3d]" started-at="2023-11-06T11:21:53 IST" name="setUp" finished-at="2023-11-06T11:22:00 IST" duration-ms="6888" status="PASS">
+    <test started-at="2023-11-06T16:45:38 IST" name="Default test" finished-at="2023-11-06T16:46:44 IST" duration-ms="65311">
+      <class name="testCases.LoginPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.LoginPageTest@4d0f2471]" started-at="2023-11-06T16:45:38 IST" name="setUp" finished-at="2023-11-06T16:46:30 IST" duration-ms="51105" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="clickbackHomeBtnTest()[pri:0, instance:testCases.CheckoutCompleteTest@73e22a3d]" started-at="2023-11-06T11:22:00 IST" name="clickbackHomeBtnTest" finished-at="2023-11-06T11:22:00 IST" duration-ms="565" status="PASS">
+        <test-method signature="LoginToApplicationTest()[pri:0, instance:testCases.LoginPageTest@4d0f2471]" started-at="2023-11-06T16:46:30 IST" name="LoginToApplicationTest" finished-at="2023-11-06T16:46:31 IST" duration-ms="1899" status="PASS">
           <reporter-output>
-            <line>
-              <![CDATA[url after click back to home =https://www.saucedemo.com/inventory.html]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- clickbackHomeBtnTest -->
-        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:testCases.CheckoutCompleteTest@73e22a3d]" started-at="2023-11-06T11:22:00 IST" name="closeBrowser" finished-at="2023-11-06T11:22:00 IST" duration-ms="107" status="PASS">
+        </test-method> <!-- LoginToApplicationTest -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:testCases.LoginPageTest@4d0f2471]" started-at="2023-11-06T16:46:31 IST" name="closeBrowser" finished-at="2023-11-06T16:46:32 IST" duration-ms="827" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=clickbackHomeBtnTest status=SUCCESS method=CheckoutCompleteTest.clickbackHomeBtnTest()[pri:0, instance:testCases.CheckoutCompleteTest@73e22a3d] output=url after click back to home =https://www.saucedemo.com/inventory.html]]]>
+                <![CDATA[[TestResult name=LoginToApplicationTest status=SUCCESS method=LoginPageTest.LoginToApplicationTest()[pri:0, instance:testCases.LoginPageTest@4d0f2471] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.CheckoutCompleteTest@73e22a3d]" started-at="2023-11-06T11:22:00 IST" name="setUp" finished-at="2023-11-06T11:22:06 IST" duration-ms="5873" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.LoginPageTest@4d0f2471]" started-at="2023-11-06T16:46:32 IST" name="setUp" finished-at="2023-11-06T16:46:38 IST" duration-ms="5716" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyURLofcheckoutCompletePageTest()[pri:0, instance:testCases.CheckoutCompleteTest@73e22a3d]" started-at="2023-11-06T11:22:06 IST" name="verifyURLofcheckoutCompletePageTest" finished-at="2023-11-06T11:22:06 IST" duration-ms="58" status="PASS">
+        <test-method signature="verifyTitleOfApplication()[pri:0, instance:testCases.LoginPageTest@4d0f2471]" started-at="2023-11-06T16:46:38 IST" name="verifyTitleOfApplication" finished-at="2023-11-06T16:46:38 IST" duration-ms="146" status="PASS">
           <reporter-output>
-            <line>
-              <![CDATA[url after click finish =https://www.saucedemo.com/checkout-complete.html]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- verifyURLofcheckoutCompletePageTest -->
-        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:testCases.CheckoutCompleteTest@73e22a3d]" started-at="2023-11-06T11:22:06 IST" name="closeBrowser" finished-at="2023-11-06T11:22:06 IST" duration-ms="110" status="PASS">
+        </test-method> <!-- verifyTitleOfApplication -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:testCases.LoginPageTest@4d0f2471]" started-at="2023-11-06T16:46:38 IST" name="closeBrowser" finished-at="2023-11-06T16:46:38 IST" duration-ms="237" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyURLofcheckoutCompletePageTest status=SUCCESS method=CheckoutCompleteTest.verifyURLofcheckoutCompletePageTest()[pri:0, instance:testCases.CheckoutCompleteTest@73e22a3d] output=url after click finish =https://www.saucedemo.com/checkout-complete.html]]]>
+                <![CDATA[[TestResult name=verifyTitleOfApplication status=SUCCESS method=LoginPageTest.verifyTitleOfApplication()[pri:0, instance:testCases.LoginPageTest@4d0f2471] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.CheckoutCompleteTest@73e22a3d]" started-at="2023-11-06T11:22:06 IST" name="setUp" finished-at="2023-11-06T11:22:12 IST" duration-ms="5902" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.LoginPageTest@4d0f2471]" started-at="2023-11-06T16:46:38 IST" name="setUp" finished-at="2023-11-06T16:46:43 IST" duration-ms="5049" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifycheckoutCompletePageTitle()[pri:0, instance:testCases.CheckoutCompleteTest@73e22a3d]" started-at="2023-11-06T11:22:12 IST" name="verifycheckoutCompletePageTitle" finished-at="2023-11-06T11:22:12 IST" duration-ms="61" status="PASS">
+        <test-method signature="verifyURLofApplicationTest()[pri:0, instance:testCases.LoginPageTest@4d0f2471]" started-at="2023-11-06T16:46:43 IST" name="verifyURLofApplicationTest" finished-at="2023-11-06T16:46:43 IST" duration-ms="71" status="PASS">
           <reporter-output>
-            <line>
-              <![CDATA[title of checkout complete =Checkout: Complete!]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- verifycheckoutCompletePageTitle -->
-        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:testCases.CheckoutCompleteTest@73e22a3d]" started-at="2023-11-06T11:22:12 IST" name="closeBrowser" finished-at="2023-11-06T11:22:12 IST" duration-ms="76" status="PASS">
+        </test-method> <!-- verifyURLofApplicationTest -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:testCases.LoginPageTest@4d0f2471]" started-at="2023-11-06T16:46:43 IST" name="closeBrowser" finished-at="2023-11-06T16:46:44 IST" duration-ms="201" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifycheckoutCompletePageTitle status=SUCCESS method=CheckoutCompleteTest.verifycheckoutCompletePageTitle()[pri:0, instance:testCases.CheckoutCompleteTest@73e22a3d] output=title of checkout complete =Checkout: Complete!]]]>
+                <![CDATA[[TestResult name=verifyURLofApplicationTest status=SUCCESS method=LoginPageTest.verifyURLofApplicationTest()[pri:0, instance:testCases.LoginPageTest@4d0f2471] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.CheckoutCompleteTest@73e22a3d]" started-at="2023-11-06T11:22:12 IST" name="setUp" finished-at="2023-11-06T11:22:18 IST" duration-ms="5918" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyconfirmImgTest()[pri:0, instance:testCases.CheckoutCompleteTest@73e22a3d]" started-at="2023-11-06T11:22:18 IST" name="verifyconfirmImgTest" finished-at="2023-11-06T11:22:18 IST" duration-ms="32" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Visiability of confirm Image =true]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- verifyconfirmImgTest -->
-        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:testCases.CheckoutCompleteTest@73e22a3d]" started-at="2023-11-06T11:22:18 IST" name="closeBrowser" finished-at="2023-11-06T11:22:19 IST" duration-ms="98" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyconfirmImgTest status=SUCCESS method=CheckoutCompleteTest.verifyconfirmImgTest()[pri:0, instance:testCases.CheckoutCompleteTest@73e22a3d] output=Visiability of confirm Image =true]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.CheckoutCompleteTest@73e22a3d]" started-at="2023-11-06T11:22:19 IST" name="setUp" finished-at="2023-11-06T11:22:24 IST" duration-ms="5871" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyorderDispatchedTextTest()[pri:0, instance:testCases.CheckoutCompleteTest@73e22a3d]" started-at="2023-11-06T11:22:24 IST" name="verifyorderDispatchedTextTest" finished-at="2023-11-06T11:22:24 IST" duration-ms="60" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Order dispatched msg text =Your order has been dispatched, and will arrive just as fast as the pony can get there!]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- verifyorderDispatchedTextTest -->
-        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:testCases.CheckoutCompleteTest@73e22a3d]" started-at="2023-11-06T11:22:24 IST" name="closeBrowser" finished-at="2023-11-06T11:22:25 IST" duration-ms="92" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyorderDispatchedTextTest status=SUCCESS method=CheckoutCompleteTest.verifyorderDispatchedTextTest()[pri:0, instance:testCases.CheckoutCompleteTest@73e22a3d] output=Order dispatched msg text =Your order has been dispatched, and will arrive just as fast as the pony can get there!]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.CheckoutCompleteTest@73e22a3d]" started-at="2023-11-06T11:22:25 IST" name="setUp" finished-at="2023-11-06T11:22:30 IST" duration-ms="5916" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifythankYouMsgTextTest()[pri:0, instance:testCases.CheckoutCompleteTest@73e22a3d]" started-at="2023-11-06T11:22:30 IST" name="verifythankYouMsgTextTest" finished-at="2023-11-06T11:22:31 IST" duration-ms="48" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Thank You msg text =Thank you for your order!]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- verifythankYouMsgTextTest -->
-        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:testCases.CheckoutCompleteTest@73e22a3d]" started-at="2023-11-06T11:22:31 IST" name="closeBrowser" finished-at="2023-11-06T11:22:31 IST" duration-ms="119" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifythankYouMsgTextTest status=SUCCESS method=CheckoutCompleteTest.verifythankYouMsgTextTest()[pri:0, instance:testCases.CheckoutCompleteTest@73e22a3d] output=Thank You msg text =Thank you for your order!]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- testCases.CheckoutCompleteTest -->
+      </class> <!-- testCases.LoginPageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -14,9 +14,9 @@ import utility.ReadData;
 public class LoginPage extends TestBase
 {
 	//object repository--we can write our xpath here
-	@FindBy(xpath="//input[@type='text']") private WebElement userNameTextBox;
-	@FindBy(xpath="//input[@type='password']") private WebElement passwordTextBox;
-	@FindBy(xpath="//input[@type='submit']") private WebElement loginBtn;
+	@FindBy(xpath="//input[contains(@name,'user-name')]") private WebElement userNameTextBox;
+	@FindBy(xpath="//input[contains(@name,'password')]") private WebElement passwordTextBox;
+	@FindBy(xpath="//input[contains(@name,'login-button')]") private WebElement loginBtn;
 	//constructor to initialize the web element(current class)
 	public LoginPage()
 	{
