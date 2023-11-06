@@ -27,14 +27,14 @@ public class LoginPageTest extends TestBase
 		initialization();
 	    login=new LoginPage();	
 	}
-	@Test(enabled = true,priority = 1,dependsOnMethods = "LoginToApplicationTest",groups= {"retest","sanity"})
+	@Test
 	public void verifyURLofApplicationTest() throws EncryptedDocumentException, IOException
 	{
 		String expURL=ReadData.readExcel_login(0,0);  //https://www.saucedemo.com/
 		String actURL=login.verifyURLofApplication();
 		AssertJUnit.assertEquals(expURL, actURL);
 	}
-	@Test(enabled = true,priority = 2,dependsOnMethods = "LoginToApplicationTest",groups = {"sanity","regression"})
+	@Test
 	public void verifyTitleOfApplication() throws EncryptedDocumentException, IOException
 	{
 		String expTitle=ReadData.readExcel_login(0,1);  //Swag Labs(0,1)

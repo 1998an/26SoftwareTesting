@@ -43,7 +43,7 @@ public class CheckoutPage1Test extends TestBase
 		invent.clickCartCount();
 		cart.clickCheckOutBtn();
 	}    
-	@Test(enabled = true,priority = 0,groups = {"sanity","regression"})
+	@Test
 	public void verifyUrlOfCheckOutPage1() throws EncryptedDocumentException, IOException
 	{
 		String expUrl=ReadData.readExcel_check1(0,0); //https://www.saucedemo.com/checkout-step-one.html
@@ -51,7 +51,7 @@ public class CheckoutPage1Test extends TestBase
 		AssertJUnit.assertEquals(expUrl, actUrl);
 		Reporter.log("Url Of checkout page 1="+actUrl);
 	}
-	@Test(enabled = true,priority = 1,dependsOnMethods = "verifyUrlOfCheckOutPage1",groups = {"sanity","regression"})
+	@Test
 	public void verifycheckOutPage1TitleTest() throws EncryptedDocumentException, IOException
 	{
 		String expTitle=ReadData.readExcel_check1(0, 1); //Checkout: Your Information
@@ -59,22 +59,22 @@ public class CheckoutPage1Test extends TestBase
 		AssertJUnit.assertEquals(expTitle, actTitle);
 		Reporter.log("title of checkout page 1  ="+actTitle);
 	}
-	@Test(enabled = false,priority = 2,dependsOnMethods = "verifyUrlOfCheckOutPage1",groups = {"sanity"})
+	@Test
 	public void verifyFirstNameTextBoxTest()
 	{
 		check1.verifyFirstNameTextBox();
 	}
-	@Test(enabled = false,priority = 3,dependsOnMethods = "verifyUrlOfCheckOutPage1",groups = {"sanity"})
+	@Test
 	public void verifyLastNameTextBoxTest()
 	{
 		check1.verifyLastNameTextBox();;
 	}
-	@Test(enabled =false,priority = 4,dependsOnMethods = "verifyUrlOfCheckOutPage1",groups = {"sanity"})
+	@Test
 	public void verifyPostalCodeTextBoxTest()
 	{
 		check1.verifyPostalCodeTextBox();
 	}
-	@Test(enabled = true,priority = 5,dependsOnMethods = "verifyUrlOfCheckOutPage1",groups = {"sanity"})
+	@Test
 	public void clickContinueBtnTest() throws EncryptedDocumentException, IOException
 	{
 		String expUrl=ReadData.readExcel_check1(0, 2); //https://www.saucedemo.com/checkout-step-two.html
@@ -82,7 +82,7 @@ public class CheckoutPage1Test extends TestBase
 		AssertJUnit.assertEquals(expUrl, actUrl);
 		Reporter.log("Url of checkout page 2="+actUrl);
 	}
-	@Test(enabled = true,priority = 6,dependsOnMethods = "verifyUrlOfCheckOutPage1",groups = {"sanity"})
+	@Test
 	public void clickCancelBtnTest() throws EncryptedDocumentException, IOException
 	{
 		String expUrl=ReadData.readExcel_check1(0,3); //https://www.saucedemo.com/cart.html

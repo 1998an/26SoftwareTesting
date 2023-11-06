@@ -35,7 +35,7 @@ public class CartPageTest extends TestBase
 		invent.add6Product();
 		invent.clickCartCount();
 	}    
-	@Test(enabled = true,priority = 0,groups = {"sanity"})
+	@Test
 	public void verifyURLofCartPageTest() throws EncryptedDocumentException, IOException
 	{
 		String expUrl=ReadData.readExce_cart(0,0); //https://www.saucedemo.com/cart.html
@@ -43,7 +43,7 @@ public class CartPageTest extends TestBase
 		AssertJUnit.assertEquals(expUrl, actUrl);
 		Reporter.log("URL of cart page ="+actUrl);
 	}
-	@Test(enabled = true,priority = 1,dependsOnMethods = "verifyURLofCartPageTest",groups = {"sanity"})
+	@Test
 	public void verifytitleOfCartPageTest() throws EncryptedDocumentException, IOException
 	{
 		String expTitle=ReadData.readExce_cart(0,1); //Your Cart
@@ -51,7 +51,7 @@ public class CartPageTest extends TestBase
 		AssertJUnit.assertEquals(expTitle, actTitle);
 		Reporter.log("Title of cart page ="+actTitle);
 	}
-	@Test(enabled = false,priority = 2,dependsOnMethods = "verifyURLofCartPageTest",groups = {"sanity"})
+	@Test
 	public void verifyQtyTextTest() throws EncryptedDocumentException, IOException
 	{
 		String expText=ReadData.readExce_cart(0,2); //QTY
@@ -59,7 +59,7 @@ public class CartPageTest extends TestBase
 		AssertJUnit.assertEquals(expText, actText);
 		Reporter.log("Text of qty ="+actText);
 	}
-	@Test(enabled = false,priority = 3,dependsOnMethods = "verifyURLofCartPageTest",groups = {"sanity","regression"})
+	@Test
 	public void verifyDescriptionTextTest() throws EncryptedDocumentException, IOException
 	{
 		String expText=ReadData.readExce_cart(0,3); //Description
@@ -67,7 +67,7 @@ public class CartPageTest extends TestBase
 		AssertJUnit.assertEquals(expText, actText);
 		Reporter.log("Text of Description ="+actText);
 	}
-	@Test(enabled = true,priority = 4,dependsOnMethods = "verifyURLofCartPageTest",groups = {"sanity","regression"})
+	@Test
 	public void clickCheckOutBtnTest() throws EncryptedDocumentException, IOException
 	{
 		String expURl=ReadData.readExce_cart(0,4); //https://www.saucedemo.com/checkout-step-one.html
@@ -75,7 +75,7 @@ public class CartPageTest extends TestBase
 		AssertJUnit.assertEquals(expURl, actUrl);
 		Reporter.log("Url after click on checkout button="+actUrl);
 	}
-	@Test(enabled = true,priority = 5,dependsOnMethods = "verifyURLofCartPageTest",groups = {"sanity","regression"})
+	@Test
 	public void clickContinueShoppingBtnTest() throws EncryptedDocumentException, IOException
 	{
 		String expURl=ReadData.readExce_cart(0,5); //https://www.saucedemo.com/inventory.html

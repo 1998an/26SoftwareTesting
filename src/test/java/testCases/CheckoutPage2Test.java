@@ -46,7 +46,7 @@ public class CheckoutPage2Test extends TestBase
 		cart.clickCheckOutBtn();
 		check1.clickContinueBtn(); //this is check1.inputInfo();
 	}
-	@Test(enabled = true,priority = 0)
+	@Test
 	public void verifyUrlofCheckoutPage2Test() throws EncryptedDocumentException, IOException
 	{
 		String expUrl=ReadData.readExcel_check2(0,0); //https://www.saucedemo.com/checkout-step-t.html
@@ -54,7 +54,7 @@ public class CheckoutPage2Test extends TestBase
 		AssertJUnit.assertEquals(expUrl, actUrl);
 		Reporter.log("Url Of checkout page 2="+actUrl);
 	}
-	@Test(enabled = true,priority = 1,dependsOnMethods = "verifyUrlofCheckoutPage2Test",groups = {"sanity"})
+	@Test
 	public void verifycheckOutPage1TitleTest() throws EncryptedDocumentException, IOException
 	{
 		String expTitle=ReadData.readExcel_check2(0, 1); //Checkout: Overview
@@ -62,7 +62,7 @@ public class CheckoutPage2Test extends TestBase
 		AssertJUnit.assertEquals(expTitle, actTitle);
 		Reporter.log("title of checkout page 2 ="+actTitle);
 	}
-	@Test(enabled = true,priority = 2,dependsOnMethods = "verifyUrlofCheckoutPage2Test",groups = {"sanity"})
+	@Test
 	public void verifypaymentInformationTextTest() throws EncryptedDocumentException, IOException
 	{
 		String extText=ReadData.readExcel_check2(0, 2); //Payment Information
@@ -70,7 +70,7 @@ public class CheckoutPage2Test extends TestBase
 		AssertJUnit.assertEquals(extText, actText);
 		Reporter.log("Payment information text ="+actText);
 	}
-	@Test(enabled = true,priority = 3,dependsOnMethods = "verifyUrlofCheckoutPage2Test",groups = {"sanity"})
+	@Test
 	public void verifyshoppingInformationTextTest() throws EncryptedDocumentException, IOException
 	{
 		String extText=ReadData.readExcel_check2(0, 3);  //Shipping Information
@@ -78,7 +78,7 @@ public class CheckoutPage2Test extends TestBase
 		AssertJUnit.assertEquals(extText, actText);
 		Reporter.log("Shipping Information text ="+actText);
 	}
-	@Test(enabled = true,priority = 5,dependsOnMethods = "verifyUrlofCheckoutPage2Test",groups = {"sanity","retest"})
+	@Test
 	public void verifypriceTotalTextTest() throws EncryptedDocumentException, IOException
 	{
 		String extText=ReadData.readExcel_check2(0, 4);  //Price Total
@@ -86,7 +86,7 @@ public class CheckoutPage2Test extends TestBase
 		AssertJUnit.assertEquals(extText, actText);
 		Reporter.log("Price Total text ="+actText);
 	}
-	@Test(enabled = true,priority = 6,dependsOnMethods = "verifyUrlofCheckoutPage2Test",groups = {"sanity","retest"})
+	@Test
 	public void clickfinishBtnTest() throws EncryptedDocumentException, IOException
 	{
 		String extUrl=ReadData.readExcel_check2(0, 5);  //https://www.saucedemo.com/checkout-complete.html
@@ -94,7 +94,7 @@ public class CheckoutPage2Test extends TestBase
 		AssertJUnit.assertEquals(extUrl, actUrl);
 		Reporter.log("url after click finish ="+actUrl);
 	}
-	@Test(enabled = true,priority = 7,dependsOnMethods = "verifyUrlofCheckoutPage2Test",groups = {"sanity","retest"})
+	@Test
 	public void clickcancelBtnTest() throws EncryptedDocumentException, IOException
 	{
 		String extUrl=ReadData.readExcel_check2(0, 6);  //https://www.saucedemo.com/inventory.html

@@ -48,7 +48,7 @@ public class CheckoutCompleteTest extends TestBase
 		check1.clickContinueBtn();
 		check2.clickfinishBtn();
 	}
-	@Test(enabled = true,priority = 0,groups = {"sanity","retest"})
+	@Test
 	public void verifyURLofcheckoutCompletePageTest() throws EncryptedDocumentException, IOException
 	{
 		String extUrl=ReadData.readExcel_checkcom(0, 0);  //https://www.saucedemo.com/checkout-complete.html
@@ -56,7 +56,7 @@ public class CheckoutCompleteTest extends TestBase
 		AssertJUnit.assertEquals(extUrl, actUrl);
 		Reporter.log("url after click finish ="+actUrl);
 	}
-	@Test(enabled = true,priority = 1,dependsOnMethods = "verifyURLofcheckoutCompletePageTest",groups = {"sanity","retest"})
+	@Test
 	public void verifycheckoutCompletePageTitle() throws EncryptedDocumentException, IOException
 	{
 		String expTitle=ReadData.readExcel_checkcom(0,1); //Checkout: Complete!
@@ -64,7 +64,7 @@ public class CheckoutCompleteTest extends TestBase
 		AssertJUnit.assertEquals(expTitle, actTitle);
 		Reporter.log("title of checkout complete ="+actTitle);
 	}
-	@Test(enabled = true,priority = 2,dependsOnMethods = "verifyURLofcheckoutCompletePageTest",groups = {"sanity","retest"})
+	@Test
 	public void verifythankYouMsgTextTest() throws EncryptedDocumentException, IOException
 	{
 		String extText=ReadData.readExcel_checkcom(0, 2);  //Thank you for your order!
@@ -72,7 +72,7 @@ public class CheckoutCompleteTest extends TestBase
 		AssertJUnit.assertEquals(extText, actText);
 		Reporter.log("Thank You msg text ="+actText);
 	}
-	@Test(enabled = false,priority = 3,dependsOnMethods = "verifyURLofcheckoutCompletePageTest",groups = {"sanity"})
+	@Test
 	public void verifyorderDispatchedTextTest() throws EncryptedDocumentException, IOException
 	{
 		String extText=ReadData.readExcel_checkcom(0, 3);  //order place text
@@ -80,14 +80,14 @@ public class CheckoutCompleteTest extends TestBase
 		AssertJUnit.assertEquals(extText, actText);
 		Reporter.log("Order dispatched msg text ="+actText);
 	}
-	@Test(enabled = true,priority = 4,dependsOnMethods = "verifyURLofcheckoutCompletePageTest",groups = {"sanity"})
+	@Test
 	public void verifyconfirmImgTest()
 	{
 		boolean result = checkcom.verifyconfirmImg();
 		AssertJUnit.assertEquals(result, true);
 		Reporter.log("Visiability of confirm Image ="+result);
 	}
-	@Test(enabled = true,priority = 5,dependsOnMethods = "verifyURLofcheckoutCompletePageTest",groups = {"sanity"})
+	@Test
 	public void clickbackHomeBtnTest() throws EncryptedDocumentException, IOException
 	{
 		String extUrl=ReadData.readExcel_checkcom(0, 4);  //https://www.saucedemo.com/inventory.html
