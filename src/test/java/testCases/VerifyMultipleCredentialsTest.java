@@ -3,9 +3,6 @@ package testCases;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeMethod;
 import org.testng.AssertJUnit;
-import org.testng.annotations.Test;
-import org.testng.annotations.BeforeMethod;
-import org.testng.AssertJUnit;
 import java.io.IOException;
 
 import org.testng.ITestResult;
@@ -54,6 +51,7 @@ public class VerifyMultipleCredentialsTest extends TestBase
 		{
 			CaptureScreenShot.screenShot(it.getName());
 		}
+		report.flush();
 		driver.close();
 	}
 }
