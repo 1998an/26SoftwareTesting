@@ -17,8 +17,8 @@ import utility.CaptureScreenShot;
 public class VerifyMultipleCredentialsTest extends TestBase
 {
 	LoginPage login;
-	@BeforeMethod(alwaysRun =true)
-	public void setUp() throws InterruptedException, IOException
+	@BeforeMethod
+	public void setUp() throws Exception
 	{
 		initialization();
 	    login=new LoginPage();	
@@ -44,7 +44,7 @@ public class VerifyMultipleCredentialsTest extends TestBase
 		     	{"visual_user","secret_sauce"}
 				};	
 	}
-	@AfterMethod(alwaysRun = true)
+	@AfterMethod
 	public void closeBrowser(ITestResult it) throws IOException
 	{
 		if(it.FAILURE == it.getStatus())

@@ -20,9 +20,9 @@ public class TestBase
 	public ExtentTest logger;
 
 	public static WebDriver driver; //webdriver setup path for browsers
-public void initialization() throws InterruptedException, IOException
+public void initialization() throws InterruptedException, IOException ,Exception
 {	
-	String browser="chrome";
+	String browser=ReadData.readPropertyFile("Browser");
 	if(browser.equals("chrome"))
 	{
 		WebDriverManager.chromedriver().setup();
@@ -41,6 +41,5 @@ public void initialization() throws InterruptedException, IOException
 	driver.manage().window().maximize();
 	driver.get(ReadData.readPropertyFile("URL"));
 	driver.manage().deleteAllCookies();
-	Thread.sleep(3000);
 }
 }

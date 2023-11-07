@@ -32,7 +32,7 @@ public class CheckoutPage2Test extends TestBase
 	CheckoutPage1 check1;
 	CheckoutPage2 check2;
 	@BeforeMethod(alwaysRun = true)
-	public void setUp() throws InterruptedException, IOException
+	public void setUp() throws Exception
 	{
 		initialization();
 		login=new LoginPage();

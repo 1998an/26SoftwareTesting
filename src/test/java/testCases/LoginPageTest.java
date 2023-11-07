@@ -22,7 +22,7 @@ public class LoginPageTest extends TestBase
 {
 	LoginPage login;  //instance variable decleration
 	@BeforeMethod(alwaysRun = true)
-	public void setUp() throws InterruptedException, IOException
+	public void setUp() throws Exception
 	{
 		initialization();
 	    login=new LoginPage();	

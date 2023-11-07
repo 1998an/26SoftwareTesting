@@ -25,7 +25,7 @@ public class CartPageTest extends TestBase
 	InventoryPage invent;
 	CartPage cart;
 	@BeforeMethod(alwaysRun = true)
-	public void setUp() throws InterruptedException, IOException
+	public void setUp() throws Exception
 	{
 		initialization();
 		login=new LoginPage();
