@@ -18,7 +18,7 @@ import pages.LoginPage;
 import utility.CaptureScreenShot;
 import utility.ReadData;
 
-public class VerifyMultipleCredentialsTest extends TestBase
+public class verifyMultipleCredentialsTest extends TestBase
 {
 	LoginPage login;
 	
