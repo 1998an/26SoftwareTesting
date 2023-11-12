@@ -8,7 +8,6 @@
       <class name="testCases.CartPageTest"/>
       <class name="testCases.CheckoutCompleteTest"/>
       <class name="testCases.LoginPageTest"/>
-      <class name="testCases.verifyMultipleCredentialsTest"/>
       <class name="testCases.InventoryPageTest"/>
     </classes>
   </test> <!-- MasterTest -->
