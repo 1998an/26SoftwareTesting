@@ -34,13 +34,6 @@ public class LoginPage extends TestBase
 		logger.log(Status.PASS, "Login is Successfull");
 		return driver.getCurrentUrl();
 	}
-	public String LoginToApplicationWithMultipleData(String un,String pass) throws Exception
-	{
-		userNameTextBox.sendKeys(un);
-		passwordTextBox.sendKeys(pass);
-		loginBtn.click();
-		return driver.getCurrentUrl();	
-	}
 	public String verifyTitleOfApplication()
 	{
 		return driver.getTitle();	
