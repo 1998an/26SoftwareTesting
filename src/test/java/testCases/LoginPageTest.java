@@ -2,15 +2,11 @@ package testCases;
 
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeMethod;
-import org.testng.AssertJUnit;
-import org.testng.annotations.Test;
-
 import base.TestBase;
 import pages.LoginPage;
 import utility.CaptureScreenShot;
 import utility.ReadData;
 
-import org.testng.annotations.BeforeMethod;
 import org.testng.Assert;
 import java.io.IOException;
 
