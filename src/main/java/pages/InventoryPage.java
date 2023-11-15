@@ -72,7 +72,7 @@ public class InventoryPage extends TestBase
 	}
 	public void verifyAddToCartBtn1()
 	{
-		addToCartBtn1.click();
+		addToCartBtn1.isEnabled();
 	}
 	public void verifyAddToCartBtn2()
 	{

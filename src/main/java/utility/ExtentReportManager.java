@@ -16,7 +16,7 @@ public class ExtentReportManager extends TestBase
 		if(report==null)
 		{
 			String reportName=new SimpleDateFormat("dd-MM-YYYY ss-mm-HH").format(new Date());
-			ExtentHtmlReporter htmlReporter =new ExtentHtmlReporter("C:\\\\Users\\\\ankit\\\\eclipse-workspace\\\\SeleniumFramework26\\\\ExtentReport\\\\"+reportName+"report.html");
+			ExtentHtmlReporter htmlReporter =new ExtentHtmlReporter("C:\\Users\\ankit\\eclipse-workspace\\SeleniumFramework26\\ExtentReport\\"+reportName+"report.html");
 			report=new ExtentReports();
 			report.attachReporter(htmlReporter);
 			report.setSystemInfo("OS", "window");

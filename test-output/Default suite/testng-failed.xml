@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testCases.VerifyMultipleCredentialsTest">
+      <class name="testCases.MultipleTestData">
         <methods>
-          <include name="LoginToApplicationWithMultipleDataTest" invocation-numbers="1"/>
-          <include name="setUp"/>
           <include name="closeBrowser"/>
+          <include name="loginWithMultipleTestDataTest" invocation-numbers="0 1 2 3"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- testCases.VerifyMultipleCredentialsTest -->
+      </class> <!-- testCases.MultipleTestData -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
