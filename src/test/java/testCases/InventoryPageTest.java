@@ -1,13 +1,5 @@
 package testCases;
 
-import org.testng.annotations.Test;
-import org.testng.annotations.BeforeMethod;
-import org.testng.AssertJUnit;
-import org.testng.annotations.Test;
-import org.testng.annotations.BeforeMethod;
-import org.testng.AssertJUnit;
-import org.testng.annotations.Test;
-import org.testng.annotations.BeforeMethod;
 import java.io.IOException;
 
 import org.apache.poi.EncryptedDocumentException;
@@ -15,6 +7,9 @@ import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.Reporter;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
 import base.TestBase;
 import pages.InventoryPage;
 import pages.LoginPage;
@@ -38,7 +33,7 @@ public class InventoryPageTest extends TestBase
 	{
 		String expURL=ReadData.readExcel_inventory(0,3);  //https://www.saucedemo.com/inventory.html
 		String actURL=invent.verifyinventoryPageUrl();
-		AssertJUnit.assertEquals(expURL, actURL);
+		Assert.assertEquals(expURL, actURL);
 		Reporter.log("url of inventory page"+actURL);
 	}
 	@Test
@@ -46,35 +41,35 @@ public class InventoryPageTest extends TestBase
 	{
 		String expLable=ReadData.readExcel_inventory(0,0);  //Products(0,0)
 		String actLable=invent.verifyProductLable();
-		AssertJUnit.assertEquals(expLable, actLable);
+		Assert.assertEquals(expLable, actLable);
 		Reporter.log("Application Lable =" +actLable);
 	}
 	@Test
 	public void verifyTwitterLogoTest()
 	{
 		boolean result=invent.verifyTwitterLogo();
-		AssertJUnit.assertEquals(result, true);
+		Assert.assertEquals(result, true);
 		Reporter.log("Visibility of Twitter LOgo =" +result);
 	}
 	@Test
 	public void verifyfacebookLogoTest()
 	{
 		boolean result=invent.verifyfacebookLogo();
-		AssertJUnit.assertEquals(result,true);
+		Assert.assertEquals(result,true);
 		Reporter.log("Visibility of Facebook logo =" +result);
 	}
 	@Test
 	public void verifylinkedInLogoTest()
 	{
 		boolean result=invent.verifylinkedInLogo();
-		AssertJUnit.assertEquals(result,true);
+		Assert.assertEquals(result,true);
 		Reporter.log("Visibility of linkedin logo =" +result);
 	}
 	@Test
 	public void verifyAppLogoTest()
 	{
 		boolean result = invent.verifyAppLogo();
-		AssertJUnit.assertEquals(result, true);
+		Assert.assertEquals(result, true);
 		Reporter.log("Visiability of app logo ="+result);
 	}
 	@Test
@@ -133,7 +128,7 @@ public class InventoryPageTest extends TestBase
 	{
 		String expCount=ReadData.readExcel_inventory(0,1);  //6
 		String actCount=invent.add6Product();
-		AssertJUnit.assertEquals(expCount, actCount);
+		Assert.assertEquals(expCount, actCount);
 		Reporter.log("Total Product added in Shopping Cart= "+actCount);
 	}
 	//use for remove and count in shopping cart
@@ -142,7 +137,7 @@ public class InventoryPageTest extends TestBase
 	{
 		String expCount=ReadData.readExcel_inventory(0,2);  //4
 		String actCount=invent.remove2Product();
-		AssertJUnit.assertEquals(expCount, actCount);
+		Assert.assertEquals(expCount, actCount);
 		Reporter.log("Total count in cart after removing 2 product ="+actCount);
 	}
 	@AfterMethod(alwaysRun = true)
