@@ -16,7 +16,8 @@ import org.testng.annotations.AfterMethod;
 
 public class LoginPageTest extends TestBase
 {
-	LoginPage login;  //instance variable decleration
+	LoginPage login;  //instance variable decleration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
+	
 	@BeforeMethod(alwaysRun = true)
 	public void setup() throws Exception
 	{
