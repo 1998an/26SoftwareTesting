@@ -32,7 +32,7 @@ public class CheckoutCompleteTest extends TestBase
 	CheckoutPage2 check2;
 	CheckoutComplete checkcom;
 	@BeforeMethod(alwaysRun = true)
-	public void setUp() throws Exception
+	public void setup() throws Exception
 	{
 		initialization();
 		login=new LoginPage();

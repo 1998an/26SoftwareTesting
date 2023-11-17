@@ -18,7 +18,7 @@ public class LoginPageTest extends TestBase
 {
 	LoginPage login;  //instance variable decleration
 	@BeforeMethod(alwaysRun = true)
-	public void setUp() throws Exception
+	public void setup() throws Exception
 	{
 		initialization();
 	    login=new LoginPage();	

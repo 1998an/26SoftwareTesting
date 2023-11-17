@@ -26,7 +26,7 @@ public class InventoryPageTest extends TestBase
 	LoginPage login;
 	InventoryPage invent;
 	@BeforeMethod(alwaysRun = true)
-	public void setUp() throws Exception
+	public void setup() throws Exception
 	{
 		initialization();
 		login=new LoginPage();

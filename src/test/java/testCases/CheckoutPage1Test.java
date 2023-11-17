@@ -31,7 +31,7 @@ public class CheckoutPage1Test extends TestBase
 	CartPage cart;
 	CheckoutPage1 check1;
 	@BeforeMethod(alwaysRun = true)
-	public void setUp() throws Exception
+	public void setup() throws Exception
 	{
 		initialization();
 		login=new LoginPage();
