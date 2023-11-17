@@ -51,7 +51,7 @@ public class LoginPageTest extends TestBase
 		{
 			CaptureScreenShot.screenShot(it.getName());
 		}
-		report.flush();
+		report.flush();  //erase any previous data on a releavent report and create a whole ew report
 		driver.close();
 	}
 }

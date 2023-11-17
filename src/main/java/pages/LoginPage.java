@@ -25,7 +25,7 @@ public class LoginPage extends TestBase
 	//method login in application
 	public String LoginToApplication() throws IOException
 	{
-		logger=report.createTest("Login to sause lab application");
+		logger=report.createTest("Login to sause lab application");//log thw status of each test step into html report generated
 		userNameTextBox.sendKeys(ReadData.readPropertyFile("UserName"));//from config.properties
 		logger.log(Status.INFO, "UserName is entered");
 		passwordTextBox.sendKeys(ReadData.readPropertyFile("PassWord"));

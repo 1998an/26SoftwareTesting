@@ -19,12 +19,12 @@ public class ExtentReportManager extends TestBase
 			ExtentHtmlReporter htmlReporter =new ExtentHtmlReporter("C:\\Users\\ankit\\eclipse-workspace\\SeleniumFramework26\\ExtentReport\\"+reportName+"report.html");
 			report=new ExtentReports();
 			report.attachReporter(htmlReporter);
-			report.setSystemInfo("OS", "window");
+			report.setSystemInfo("OS", "window");                      //skipped this
 			report.setSystemInfo("Environment", "SIT");
 			report.setSystemInfo("Build Number", "102.02.02.123");
 			report.setSystemInfo("Browser", "Chrome");
 			htmlReporter.config().setDocumentTitle("UI Testing Document");
-			htmlReporter.config().setReportName("UI Test Report");
+			htmlReporter.config().setReportName("UI Test Report");          //to this
 		}
 		return report;
 		
