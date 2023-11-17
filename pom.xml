@@ -39,10 +39,11 @@
     <version>4.4.3</version> <!-- Use the latest version -->
 </dependency>
 
+<!-- Log4j (as the binding implementation) -->
 <dependency>
     <groupId>org.apache.logging.log4j</groupId>
-    <artifactId>log4j-core</artifactId>
-    <version>2.14.1</version> <!-- Replace with the latest version available -->
+    <artifactId>log4j-slf4j-impl</artifactId>
+    <version>2.14.1</version> <!-- Replace with the latest version -->
 </dependency>
 
 <dependency>
